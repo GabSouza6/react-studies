@@ -1,0 +1,40 @@
+const Login = () => {
+  return (
+    <form className="max-w-xl flex flex-col gap-4 bg-black text-white">
+      <p className="text-2xl">Entrar</p>
+
+      <div>
+        <label htmlFor="email">Nome de usuário ou e-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="e-mail@email.com"
+          className="bg-[#130234] border border-[#6528D3] py-4 px-3 w-full text-xs rounded-sm"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="password">Senha</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          className="bg-[#130234] border border-[#6528D3] py-4 px-3 w-full text-xs rounded-sm"
+        />
+      </div>
+
+      <label className="flex items-center gap-2 cursor-pointer">
+        <input type="checkbox" className="hidden peer" />
+        <span className="w-4 h-4 border-2 border-[#6528D3] peer-checked:bg-[#6528D3] rounded-sm"></span>
+        Manter conectado
+      </label>
+
+      <a className="text-[#6528D3] cursor-pointer">Recupere sua senha</a>
+      <button type="submit" className="bg-[#6528D3] rounded-sm py-4 cursor-pointer">
+        Entrar
+      </button>
+    </form>
+  );
+};
+export default Login;
